@@ -10,6 +10,7 @@ body {
     height: 100vh;
 }
 
+
 .container {
     display: flex;
     width: 100%;
@@ -22,7 +23,7 @@ body {
 }
 
 .image-left img {
-    width: 100%;
+    width: 100vh;
     height: 100%;
     object-fit: cover;
 }
@@ -42,12 +43,23 @@ body {
     flex: 1.5;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    /*padding: 40px;*/
     background-color: #f9f9f9;
 }
 
 .top, .middle, .bottom {
     margin-bottom: 40px;
+}
+
+.middle{
+    padding-right: 40px;
+}
+
+.middle form {
+    padding-left: 40px;
+}
+.top, .bottom {
+    padding: 40px;
 }
 
 .top p {
