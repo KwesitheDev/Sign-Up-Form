@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <div class="image">
+        <div class="image-left">
             <img src="resources/images/sign-up.avif" alt="lush green background">
-            <img class="logo" src="resources/images/odin-lined.png" alt="the odin project Logo">
+            <p>
+                <img class="logo" src="resources/images/odin-lined.png" alt="the odin project Logo">
+            </p>
         </div>
         <div class="content">
             <div class="top">
@@ -23,33 +25,40 @@
             </div>
             <div class="middle">
                 <form action="#" method="post">
-                    <div class="label-input">
-                        <label for="firstName">FIRST NAME</label>
-                        <input type="text" id="firstName" placeholder="Thor">
+                    <div class="form-group">
+                        <div class="label-input">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Thor">
+                        </div>
+                        <div class="label-input">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" placeholder="Odinson" id="lastName">
+                        </div>
                     </div>
-                    <div class="label-input">
-                        <label for="lastName"> LAST NAME</label>
-                        <input type="text" placeholder="Odinson" id="lastName">
+                    <div class="form-group">
+                        <div class="label-input">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="example@example.com">
+                        </div>
+                        <div class="label-input">
+                            <label for="phoneNumber">Phone Number</label>
+                            <input id="phoneNumber" type="tel" placeholder="233500000000">
+                        </div>
                     </div>
-                    <div class="label-input">
-                        <label for="email">EMAIL</label>
-                        <input id="email" type="email" placeholder="example@example.com">
+                    <div class="form-group">
+                        <div class="label-input">
+                            <label for="password">Password</label>
+                            <input id="password" type="password">
+                        </div>
+                        <div class="label-input">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input id="confirmPassword" type="password">
+                        </div>
                     </div>
-                    <div class="label-input">
-                        <label for="phoneNumber"> PHONE NUMBER</label>
-                        <input id="phoneNumber" type="tel" placeholder="233500000000">
-                    </div>
-                    <div class="label-input">
-                        <label for="password">PASSWORD</label>
-                        <input id="password" type="text">
-                    </div>
-                    <div class="label-input">
-                        <label for="confirmPassword">CONFIRM PASSWORD</label>
-                        <input id="confirmPassword" type="text">
-                    </div>
+                    <p id="message"></p>
                 </form>
             </div>
-
+            
             <div class="bottom">
                 <button type="submit">Create Account</button>
                 <br>
